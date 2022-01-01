@@ -20,11 +20,19 @@ export default {
     Modal,
     Loading
   },
-  created() {
-    this.getFilms()
+  async created() {
+    const _token = localStorage.getItem('token');
+    if(_token) {
+      await this.$store.commit('setToken', _token)
+      await this.getFilms()
+      return
+    }
+    await this.getToken()
+    await this.getFilms()
   },
   methods: {
     ...mapActions([
+      'getToken',
       'getFilms'
     ])
   },
