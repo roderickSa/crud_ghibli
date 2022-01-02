@@ -1,4 +1,8 @@
-# crud-ghibli
+# list-ghibli
+Lista de peliculas del estudio ghibli
+
+## Capturas
+<img src="https://drive.google.com/file/d/1QEXS4ewJZvpTu2OSioL4hRU9bi7etH7H/view?usp=sharing" alt="captura1">
 
 ## Project setup
 ```
